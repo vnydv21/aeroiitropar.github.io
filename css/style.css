@@ -51,7 +51,7 @@ header a span{
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
-    position: relative;
+    position: relative;    
 }
 
 .nav-links ul li a {
@@ -337,6 +337,7 @@ h2{
         top: 80px;
         right:-100%;
         text-align: center;
+        z-index: 9;
         transition: 0.5s;
     }
 
@@ -359,6 +360,6 @@ h2{
 
     .nav-links ul.show{
         right:0;
-        overflow: hidden;
+        z-index: 9;
     }
 }
