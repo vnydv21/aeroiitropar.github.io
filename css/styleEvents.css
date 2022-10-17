@@ -1,0 +1,248 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header --------------------------------*/
+
+header {    
+    width: 100%;
+    color: white;
+    background-color: rgba(18,18,70,1);
+    position: relative;
+}
+/*rgba(30,156,206,1)*/
+
+header nav {
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a span{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin: 0 auto;
+    padding-left: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
+#logo {
+    display: flex;
+}
+
+#logotext{
+    margin : 0 auto;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sublogotext{
+    font-size: 0.6rem;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links ul li::after{    
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:rgba(30,156,206,1) ;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover:after{
+    width: 100%;    
+}
+
+.nav-links #icon{
+    color: white;
+    font-size: 1.5rem;
+    float: right;
+    margin-right: 1%;
+    cursor: pointer;
+    display: none;
+}
+
+/*  SECTIONS CONTENT -------------------------------- */
+.content {        
+    padding: 2% 2%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*  FOOTER -------------------------------- */
+footer{    
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    padding-left: 10%;
+    color: white;
+    background-color: rgba(18,18,70,1);
+}
+
+.footer > *{
+    flex: 1 100%;
+}
+
+.footer-left{    
+    margin-bottom: 2em;
+    margin-right: 10em;
+}
+
+h1{
+    font-weight: 100;
+    font-size: 1.4rem;
+}
+
+h2{    
+    font-weight: 100;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.footer ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer li{
+    line-height: 1.5em;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.box li{
+    color: white;
+    font-size: 0.9rem;
+}
+
+.footer-right{
+    display: flex;
+    flex-flow:row wrap;
+}
+
+.footer-right > *{
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+
+.box a{
+    color: white;
+}
+
+.footer-bottom{
+    font-size: 0.8rem;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+}
+
+.footer-left p{
+    padding-right: 20%;
+    font-size: 0.9rem;
+}
+
+.socials a{
+    background: rgba(18,18,70,1);
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 1px;
+}
+
+.socials{
+    padding-top: 6%;
+}
+
+.socials a i{
+    color: rgba(30,156,206,1);
+}
+
+@media screen and (min-width: 800px){
+    .footer-right > *{
+        flex:1;
+    }
+    .footer-left{
+        flex: 1 0px;
+    }
+    .footer-right{
+        flex: 2 0px;
+    }
+
+}
+
+@media(max-width: 800px){
+    .footer-right h2{
+        padding-top: 5%;
+    }
+
+    .content {        
+        display: block;        
+    }
+
+    header a span{
+        font-size: 1.1rem;
+    }
+
+    .nav-links #icon{
+        display: block;
+    }
+
+    .nav-links ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(18,18,70,1); 
+        top: 80px;
+        right:-100%;
+        text-align: center;
+        transition: 0.5s;
+    }
+
+    .nav-links ul li{
+        display: block;
+        margin: 20px 0;
+        line-height: 20px;
+    }
+
+    .nav-links ul li a {
+        font-size: 1rem;
+    }
+    .nav-links ul li a:hover{
+        border: none;
+        color: rgba(30,156,206,1);
+    }
+    .nav-links ul li:hover:after{
+        width: 0%;
+    }
+
+    .nav-links ul.show{
+        right:0;
+        overflow: hidden;
+    }
+}

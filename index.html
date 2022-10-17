@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Aero IIT Ropar | Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+    $("#icon").click(function(){
+    $(".nav-links ul").toggleClass("show");
+    });
+    });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <a id="logo" href="index.html">
+                <img src="images/logo.jpeg" height="70" widht="70">
+                <div id="logotext">
+                    <span>  AEROMODELLING CLUB </span>
+                    <!--<span id="sublogotext"> IIT ROPAR </span>-->
+                </div>
+            </a>
+            
+            <div class="nav-links" id="navLinks">
+                <ul class="navui">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="pages/events.html">EVENTS</a></li>
+                    <li><a href="#">RANKS</a></li>
+                    <li><a href="#">ABOUT</a></li>                    
+                </ul>
+                <label id="icon">
+                    <i class="fa-sharp fa-solid fa-bars"></i>
+                </label>
+            </div>            
+        </nav>
+    </header>
+
+    <section class="content">
+        <!-- flex -->
+        <section class="gallery">
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">                  
+                  <img src="images/image1.jpg" style="width:100%">                  
+                </div>
+              
+                <div class="mySlides fade">                  
+                  <img src="images/image2.jpg" style="width:100%">                  
+                </div>
+              
+                <div class="mySlides fade">                  
+                  <img src="images/image3.jpg" style="width:100%">                  
+                </div>
+              
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+        </section>
+
+        <section class="news">
+            <!--
+                Create blue border
+                Latest in red
+                options for past news
+            -->
+            <div id="newslabel">
+                <span>
+                    LATEST
+                </span>
+            </div>
+            
+            <div class="news-links">
+                <ul id="newslinks">
+                    <li><a href="#">ISMP Event</a></li>
+                    <li><a href="#">BUILD 2.0 Session cohosted by by Boeing and IIT Delhi</a></li>
+                    <li><a href="#">Selection of the Aeronauts</a></li>                    
+                </ul>                
+            </div>       
+        </section>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <h1>AEROMODELLING CLUB</h1>
+            <h2>IIT ROPAR</h2>
+            <p><em>Courage to Fly</em></p>
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>                
+            </div>
+        </div>
+
+        <ul class="footer-right">
+            <li>
+                <h2>Useful Pages</h2>
+
+                <ul class="">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/pages/events.html">Events</a></li>
+                    <li><a href="">Ranks</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <h2>Address</h2>
+
+                <ul class="box">
+                    <li>IIT Ropar, Main Campus</li>
+                    <li>Rupnagar</li>
+                    <li>Punjab</li>
+                    <li>India - 140001</li>
+                </ul>
+            </li>            
+        </ul>
+
+        <div class="footer-bottom">
+            <p>&copy; Aeromodelling Club IIT Ropar 2022</p>
+        </div>
+    </footer>
+    
+</body>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slides[slideIndex-1].style.display = "block";  
+    }
+    </script>
+</html>
