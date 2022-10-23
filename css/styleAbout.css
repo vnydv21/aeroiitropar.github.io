@@ -92,14 +92,14 @@ header a span{
 
 /* team */
 #team{
-    margin:50px 0;
+    margin-top: 2%;
     text-align:center;
 }
 
 #team h1{    
-    color: rgba(18,18,70,1);    
+    color: white;    
     font-size:1.3rem;
-    font-weight:600;
+    font-weight:300;
 }
 
 #teamLabel{
@@ -157,6 +157,19 @@ header a span{
     font-size:0.8rem;
 }
 
+.member-socials a{    
+    width: 40px;
+    height: 40px;
+    display: inline-block;    
+}
+
+.member-socials {
+    padding-top: 0%;
+}
+
+.member-socials a i{
+    color: rgba(30,156,206,1);
+}
 
 @media (min-width:800px){
     #team h1{
