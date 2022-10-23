@@ -96,15 +96,38 @@ header a span{
     text-align:center;
 }
 
-#team h1{
-    font-size:0.2rem;
+#team h1{    
+    color: rgba(18,18,70,1);    
+    font-size:1.3rem;
     font-weight:600;
 }
+
+#teamLabel{
+    color: white;
+    background-color: rgba(18,18,70,1);
+}
+
 .container{
     display:flex;
     justify-content: center;
     flex-direction:row;
     flex-wrap:wrap;
+}
+
+.container h1{    
+    color: rgba(18,18,70,1);
+    padding-top: 2%;
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid rgba(18,18,70,1); 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+}
+
+.container h1 span{
+    color: rgba(18,18,70,1);
+    background:#fff; 
+    padding:0px 10px;
 }
 .member{
     text-align: center;
@@ -126,14 +149,15 @@ header a span{
 
 .user-details
 {
+    color: rgba(18,18,70,1);
     display:inline-block;
-    font-size:12px;
+    font-size:0.8rem;
 }
 
 
-@media (min-width:700px){
+@media (min-width:800px){
     #team h1{
-        font-size:1.0rem;
+        font-size:1.5rem;
         font-weight:600;
     }
     .member{
@@ -151,11 +175,10 @@ header a span{
     }
     .user-details{
     display:inline-block;
-    font-size:22px;
+    font-size:1.1rem;
+    }
 }
 
-
-}
 @media (min-width:1000px){
     #team h1{
         font-size:1.5rem;
@@ -176,7 +199,7 @@ header a span{
     }
     .user-details{
     display:inline-block;
-    font-size:16px;
+    font-size:1.0rem;
 }
 
 
