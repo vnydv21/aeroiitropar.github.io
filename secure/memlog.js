@@ -83,7 +83,7 @@ container2.innerHTML = "<h1><span>LEADERS</span></h1>";
 for (let [key, value] of members)
 {
     var someHTML = "<div class='member'>\
-        <img src='../images/"+value.imgsrc+"'>\
+        <img src='../images/profiles/"+value.imgsrc+"'>\
         <p class='user-details'><b>"+key+"</b><br>"+value.role+"</p>\
         <div class='member-socials'>\
             <a href='"+value.instagram+"'><i class='fa-brands fa-instagram'></i></a>\
