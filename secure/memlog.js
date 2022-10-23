@@ -4,15 +4,15 @@ members.set(
     'Shraman Maiti',{
         imgsrc: 'Shraman.webp',
         role: 'Mentor',
-        instagram: "#",
-        linkedin: '#'
+        instagram: "https://www.instagram.com/shraman_maiti/",
+        linkedin: 'https://www.linkedin.com/in/shraman-maiti-78162a207/'
     });
 members.set(
     'Ankur Agarwal',{
         imgsrc: 'Ankur.webp',
         role: 'Representative',
-        instagram: "#",
-        linkedin: '#'
+        instagram:"https://www.instagram.com/invites/contact/?i=xgy67fz1b1zr&utm_content=mzbcmx0",
+        linkedin: 'https://www.linkedin.com/in/ankur-aggarwal-3658b2228'
     });
 members.set(
     'Yash Rai',{
@@ -63,6 +63,8 @@ members.set(
         instagram: "#",
         linkedin: '#'
     });
+
+
 
 container = document.getElementById('team');
 const official = 2;
