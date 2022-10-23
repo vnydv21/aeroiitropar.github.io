@@ -121,7 +121,7 @@ header a span{
     text-align: center; 
     border-bottom: 1px solid rgba(18,18,70,1); 
     line-height: 0.1em;
-    margin: 10px 0 20px; 
+    margin: 10px 0 20px;
 }
 
 .container h1 span{
@@ -137,18 +137,21 @@ header a span{
     margin-left:0.8em;
     width:40%;
     margin-top:50px;
-    margin-bottom:50px;    
+    margin-bottom:50px;
 }
 
-.member img{
-    height:120px;
-    width:120px;
+.member img{    
+    margin-left: auto;
+    margin-right: auto;
+    height:80%;
+    width:60%;
     border-radius:50%;            
     border: 5px solid rgba(30,156,206,1);
 }
 
 .user-details
 {
+    padding-top: 2%;
     color: rgba(18,18,70,1);
     display:inline-block;
     font-size:0.8rem;
@@ -165,13 +168,6 @@ header a span{
         width:30%;
         margin-top:50px;
         margin-bottom:50px;
-    }
-
-    .member img{
-        height:160px;
-        width:160px;
-        border-radius:50%;
-        margin:0;
     }
     .user-details{
     display:inline-block;
@@ -191,12 +187,6 @@ header a span{
         margin-bottom:50px;
     }
 
-    .member img{
-        height:200px;
-        width:200px;
-        border-radius:50%;
-        margin:0;
-    }
     .user-details{
     display:inline-block;
     font-size:1.0rem;
