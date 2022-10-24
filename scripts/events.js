@@ -4,12 +4,12 @@ $(document).ready(function() {
 
         calendarEvents: [
             {
-              id: 'ISMP_1', // Event's ID (required)
-              name: "ISMP Meet", // Event name (required)
-              date: "October/29/2022", // Event date (required)
-              type: "event", // Event type (required)
+              id: 'ISMP_1',
+              name: "ISMP Meet",
+              date: "October/29/2022",
+              type: "event",
               description: "Welcome to the ISMP meet!",              
-              color: "#63d867" // Event custom color (optional)
+              color: "#63d867"
             },
           ]
     })
