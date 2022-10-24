@@ -342,6 +342,7 @@ h2{
         right:-100%;
         text-align: center;
         transition: 0.5s;
+        z-index: 9;
     }
 
     .nav-links ul li{
@@ -364,5 +365,6 @@ h2{
     .nav-links ul.show{
         right:0;
         overflow: hidden;
+        z-index: 9;
     }
 }
