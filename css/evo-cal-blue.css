@@ -708,7 +708,7 @@ button.icon-button > span.chevron-arrow-right {
     position: relative;
     padding: 10px 20px;
     text-align: center;
-    background-color: #8773c1;
+    background-color: rgba(18,18,70,1);
     -webkit-box-shadow: 0 3px 8px -3px rgba(53, 43, 80, 0.65);
     box-shadow: 0 3px 8px -3px rgba(53, 43, 80, 0.65);
   }
@@ -729,7 +729,7 @@ button.icon-button > span.chevron-arrow-right {
     width: 100%;
     height: calc(100% - 43px);
     overflow-y: auto;
-    background-color: #8773c1;
+    background-color: rgba(18,18,70,1);
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
