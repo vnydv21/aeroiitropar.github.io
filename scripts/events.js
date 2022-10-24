@@ -1,1 +1,3 @@
-$("#calendar").evoCalendar();
+$('#calendar').evoCalendar({
+    theme: 'Royal Navy';
+})
