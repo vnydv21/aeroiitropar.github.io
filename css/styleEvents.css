@@ -90,6 +90,9 @@ header a span{
     flex-direction: row;
 }
 
+#calendar{
+    width:95%;
+}
 
 /*  FOOTER -------------------------------- */
 footer{    
